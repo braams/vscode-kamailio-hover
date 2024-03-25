@@ -1,0 +1,1 @@
+These files are generated from the documentation of the Kamailio project: https://github.com/kamailio/kamailio/ and https://github.com/kamailio/kamailio-wiki
