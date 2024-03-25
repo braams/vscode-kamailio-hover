@@ -2,7 +2,7 @@
   "name": "kamailio-hover",
   "displayName": "kamailio-hover",
   "description": "Displays documentation on keywords in Kamailio configuration",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "braamsdev",
   "engines": {
     "vscode": "^1.87.0"
@@ -10,7 +10,9 @@
   "categories": [
     "Other"
   ],
-  "keywords":["kamailio"],
+  "keywords": [
+    "kamailio"
+  ],
   "pricing": "Free",
   "repository": {
     "type": "git",
@@ -21,18 +23,18 @@
   "contributes": {
     "languages": [
       {
-          "id": "kamailio",
-          "aliases": [
-              "kamailio"
-          ],
-          "extensions": [
-              ".cfg",
-              ".inc"
-          ],
-          "firstLine": "^#!KAMAILIO",
-          "configuration": "./language-configuration.json"
+        "id": "kamailio",
+        "aliases": [
+          "kamailio"
+        ],
+        "extensions": [
+          ".cfg",
+          ".inc"
+        ],
+        "firstLine": "^#!KAMAILIO",
+        "configuration": "./language-configuration.json"
       }
-  ]
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
