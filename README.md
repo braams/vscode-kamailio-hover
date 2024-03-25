@@ -2,7 +2,7 @@
 
 This is the Visual Studio Code extension that enhances clarity of the Kamailio configuration.
 
-![](demo.png)
+![Demo](https://raw.githubusercontent.com/braams/vscode-kamailio-hover/master/demo.gif)
 
 ## Features
 
