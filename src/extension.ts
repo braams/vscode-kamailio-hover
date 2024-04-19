@@ -165,7 +165,7 @@ function lookupModParam(document: vscode.TextDocument, position: vscode.Position
 	}
 
 	var mod, param;
-	const re = /modparam\('(?<mod>\w+)'[,\s]+'(?<param>\w+)'.*/;
+	const re = /modparam\("(?<mod>\w+)"[,\s]+"(?<param>\w+)".*/;
 	const match = re.exec(line.text);
 	if (match && match.groups) {
 		mod = match.groups['mod'];
