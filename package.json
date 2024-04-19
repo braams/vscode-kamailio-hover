@@ -2,7 +2,7 @@
   "name": "kamailio-hover",
   "displayName": "kamailio-hover",
   "description": "Displays documentation on keywords in Kamailio configuration",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "braamsdev",
   "engines": {
     "vscode": "^1.87.0"
