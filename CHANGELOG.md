@@ -1,8 +1,8 @@
-# Change Log
 
-All notable changes to the "kamailio-hover" extension will be documented in this file.
+## 1.0.1 (2024-04-19)
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+  * updated documentation to 5.8.x branch
+  * added tooltips for module names
 
 ## [Unreleased]
 

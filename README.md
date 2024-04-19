@@ -27,8 +27,3 @@ Instructions for preparing these files by yourself will be available soon.
 ## Useful thing
 
 I also recommend using the extension for syntax highlighting: https://github.com/miconda/vscode-kamailio-syntax
-
-
-### 1.0.0
-
-Initial release 
