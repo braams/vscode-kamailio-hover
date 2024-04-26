@@ -5,3 +5,12 @@ node_modules
 *.vsix
 .DS_Store
 src/.DS_Store
+/.venv/
+/tmp/
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/.gitignore
+/.idea/kamailio-hover-ext.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/workspace.xml

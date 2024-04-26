@@ -1,3 +1,6 @@
+## 1.1.2 (2024-04-26)
+
+  * added documentation for tls_wolfssl and tlsa modules parameters
 
 ## 1.1.1 (2024-04-19)
 

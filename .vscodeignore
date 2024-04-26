@@ -9,3 +9,10 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 **/.vscode-test.*
+tmp
+.venv
+.idea
+demo.gif
+etc
+generator.py
+requirements.txt

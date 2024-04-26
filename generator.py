@@ -337,6 +337,14 @@ def extract_cookbook(book) -> dict:
     return data
 
 
+def apply_tls_hack(data: dict):
+    # The tlsa and tls_wolfssl modules have the same parameters as tls
+    # But they are not described in the documentation, so just copy them
+
+    data['tlsa']['parameters'] = data['tls']['parameters']
+    data['tls_wolfssl']['parameters'] = data['tls']['parameters']
+
+
 if __name__ == '__main__':
     maketempdir()
 
@@ -352,6 +360,9 @@ if __name__ == '__main__':
     data = {}
     for mod in modules:
         data[mod] = extract_module(mod)
+
+    apply_tls_hack(data)
+
     json_dump("modules.json", data)
 
     cookbooks = ["core", "pseudovariables", "transformations"]
