@@ -11,15 +11,15 @@ import pypandoc
 from lxml import etree
 from mistune.renderers.markdown import MarkdownRenderer
 
-src_version = "5.8.1"
-cookbook_version = "5.8.x"
+src_version = "6.0.1"
+cookbook_version = "6.0.x"
 
 src_url = "https://github.com/kamailio/kamailio/archive/refs/tags/%s.zip"
 cookbook_url = "https://raw.githubusercontent.com/kamailio/kamailio-wiki/main/docs/cookbooks/%s/%s.md"
 tmp_dir = "tmp"
 
 exclude = ['app_python', 'uid_auth_db', 'uid_gflags', 'ims_dialog', 'uid_domain', 'ims_registrar_scscf', 'mangler',
-           'rtpproxy', 'uid_uri_db']
+           'rtpproxy', 'uid_uri_db', 'CMakeLists.txt']
 log = logging.getLogger()
 logging.basicConfig(level=logging.INFO)
 
@@ -82,7 +82,7 @@ def convert_doc(version, module):
 
     mdfile = os.path.join(fulldocdir, "%s.md" % module)
     if not os.path.exists(mdfile):
-        parser = etree.XMLParser(load_dtd=True, no_network=False)
+        parser = etree.XMLParser(load_dtd=True, no_network=True)
         tree = etree.parse(docfile, parser=parser)
         tree.xinclude()
         content = etree.tostring(tree, pretty_print=True, xml_declaration=True, encoding="utf-8")
