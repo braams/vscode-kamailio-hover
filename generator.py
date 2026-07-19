@@ -11,8 +11,8 @@ import pypandoc
 from lxml import etree
 from mistune.renderers.markdown import MarkdownRenderer
 
-src_version = "6.0.1"
-cookbook_version = "6.0.x"
+src_version = "6.1.3"
+cookbook_version = "6.1.x"
 
 src_url = "https://github.com/kamailio/kamailio/archive/refs/tags/%s.zip"
 cookbook_url = "https://raw.githubusercontent.com/kamailio/kamailio-wiki/main/docs/cookbooks/%s/%s.md"
